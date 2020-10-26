@@ -189,14 +189,14 @@
     function btnAClick(e){
       active = true;
       startTime = new Date();
-        
+         $("#status").html("スタート");
         
     }
 
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
         active = false;
-        
+        $("#status").html("一時停止中");
     }
 
     // ButtonCがクリックされた時の処理
@@ -205,12 +205,13 @@
         period = 60* parseInt($("#minute").val()) + parseInt($("#second").val());
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間：" + period);
+         $("#status").html("タイマーセット完了");
         
     }
-    // ButtonCがクリックされた時の処理
+    // ButtonDがクリックされた時の処理
     function btnDClick(e){
         active = true;
-        
+         $("#status").html("再開");
     }
  
     // 繰り返し実行する処理
@@ -240,6 +241,7 @@
 
     <div id="remain">Remaining time</div>
     <div id="time">Time</div>
+    <div id="status">Status</div>
     <button id="btnA">開始</button>  
     <button id="btnB">一時停止</button>  
     <button id="btnC">設定</button>
