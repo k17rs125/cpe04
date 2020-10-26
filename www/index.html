@@ -210,6 +210,7 @@
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間：" + period);
          $("#status").html("タイマーセット完了");
+         $("body").css("background","lightgreen");
         
     }
     // ButtonDがクリックされた時の処理
@@ -230,11 +231,13 @@
       }
       if(rest == 60){
          $("#status").html("残り1分");
+         $("body").css("background","lightsalmon");
       }
       if(rest <= 0){
         active = false;
         alarm();
         $("#status").html("タイマー終了");
+        $("body").css("background","skyblue");
       }
         
         
