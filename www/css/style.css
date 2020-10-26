@@ -22,6 +22,7 @@
         position:absolute; top:280px; 
         left:10px; right:10px;
         font-weight: bold;
+        font-style:italic;
     }
     
     #time {
@@ -31,6 +32,7 @@
         position:absolute; top:320px; 
         left:10px; right:10px;
         font-weight: bold;
+        font-style:oblique;
     }
     
     #mycanvas {
