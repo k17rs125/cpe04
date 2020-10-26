@@ -42,6 +42,10 @@
         $('#btnD').click(function(e) {
             btnDClick(e);
         });
+
+        $('#btnE').click(function(e) {
+            btnEClick(e);
+        });
         init();
     });
     
@@ -213,6 +217,7 @@
         active = true;
          $("#status").html("再開");
     }
+
  
     // 繰り返し実行する処理
     function timer(){  
@@ -222,6 +227,9 @@
         $("#time").html("経過時間："+ time);
         $("#remain").html("残り時間：" + rest);
         analog(rest);
+      }
+      if(rest == 60){
+         $("#status").html("残り1分");
       }
       if(rest <= 0){
         active = false;
@@ -246,7 +254,7 @@
     <button id="btnA">開始</button>  
     <button id="btnB">一時停止</button>  
     <button id="btnC">設定</button>
-     <button id="btnD">再開</button>  
+     <button id="btnD">再開</button> 
     <input type="number" id="minute" value=3 >
     <input type="number" id="second" value=0 >
 </body>

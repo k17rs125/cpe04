@@ -64,6 +64,11 @@
        font-size: 20px;
         position:absolute; top:460px; left:52%; width:30%; height:60px; 
     }
+
+     #btnE{
+       font-size: 20px;
+        position:absolute; top:160px; left:72%; width:30%; height:60px; 
+    }
     
     #minute {
         font-size: 30px;
